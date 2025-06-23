@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><%= title %></h1>
+            <p class="subtitle">Proyecto con Arquitectura MVC</p>
+        </header>
+        
+        <main>
+            <div class="card">
+                <h2><%= message %></h2>
+                <p class="timestamp">Generado el: <%= timestamp %></p>
+                
+                <div class="info">
+                    <h3>Estructura del Proyecto</h3>
+                    <ul>
+                        <li><strong>Model:</strong> Maneja la lógica de datos</li>
+                        <li><strong>View:</strong> Presenta la información al usuario</li>
+                        <li><strong>Controller:</strong> Gestiona las peticiones y respuestas</li>
+                    </ul>
+                </div>
+                
+                <div class="examples">
+                    <h3>Prueba estas URLs:</h3>
+                    <ul>
+                        <li><a href="/">Mensaje por defecto</a></li>
+                        <li><a href="/hello/Juan">Saludo personalizado</a></li>
+                        <li><a href="/hello/María">Otro ejemplo</a></li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <p>Creado con Node.js, Express y EJS</p>
+        </footer>
+    </div>
+</body>
+</html>
